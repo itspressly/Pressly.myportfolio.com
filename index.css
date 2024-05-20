@@ -1,0 +1,443 @@
+body
+{
+  padding: 0%;
+   margin: 0%;
+   font-family: monospace;
+}
+
+/*My navbar*/
+
+nav {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+   top: 0%;
+   opacity: 10;
+
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+
+img
+{
+    height: 30px;
+}
+
+
+/*the first section of my page*/
+
+video
+{
+  position: absolute;
+  margin-top: 54px;
+  left: 0%;
+  width: 100%;
+  height: 677px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.first-section
+{
+
+ 
+    padding-top: 12px;
+    margin-top: 50px;
+    height: 715px;
+    width: 100%;
+   padding: 0%;
+   margin: 0%;
+  display: flex;
+    
+}
+
+/*
+.intro-heading {
+  background-color: rgb(0, 0, 0);
+  
+    
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    animation: slideLeft 9s ease-in-out forwards;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    height: 50px;
+   width: 100%;
+   font-size: 8px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   margin-left: 12px;
+  }
+
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+
+*/
+  
+  .heading {
+    opacity: 0;
+    animation: fadeIn 6s ease-in forwards;
+    color: white;
+    margin-top: 65px;
+    margin-left: 13px;
+  }
+  
+  .intro-paragraph {
+    opacity: 0;
+    animation: fadeIn 7s ease-in 2s forwards;
+    color: white;
+    margin-left: 13px;
+   font-size: 15.3px;
+   font-weight:bolder;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .firsthalf
+  {
+    
+    height: 100%;
+    width: 50%;
+    max-height: fit-content;
+  }
+  .secondhalf
+  {
+    
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+
+  
+  #pic{
+    width: 90%; 
+    max-width: 225px;
+    height: auto;
+    border-top-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+    opacity: 0.9;
+  }
+
+/*Second section of my page*/
+
+
+.second-section
+{
+    height: 1510px;
+    background-color:rgb(110, 110, 110);
+    width: 100%;
+    margin-top: 18px;
+}
+
+.github-projects
+{
+  display: flex;
+
+  justify-content: center;
+  align-items:last baseline;
+  height: 140px;
+}
+
+#h1-number2
+{
+ /* display: inline-block;
+  border-radius: 50px;
+  padding: 10px;
+  animation: rainbow-border 5s infinite;*/
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px;
+  animation: rainbow-border 5s  infinite;
+  
+
+}
+
+
+@keyframes rainbow-border {
+  0%   { 
+    border: 2px solid red;
+    color: rgb(26, 77, 172);
+  }
+  14%  { 
+    border: 2px solid orange;
+    color: rgb(255, 190, 69);
+  }
+  28%  { 
+    border: 2px solid yellow;
+    color: yellow;
+  }
+  42%  { 
+    border: 2px solid green;
+    color: green;
+  }
+  57%  { 
+    border: 2px solid blue;
+    color: blue;
+  }
+  71%  { 
+    border: 2px solid indigo;
+    color: indigo;
+  }
+  85%  { 
+    border: 2px solid rgb(252, 252, 252);
+    color: violet;
+  }
+  100% { 
+    border: 2px solid red;
+    color: red;
+  }
+}
+
+
+.CONTENT
+{
+ 
+  height: 1810px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+ 
+  
+}
+
+.web
+{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 12px;
+  height: 350px;
+
+width: 100%;
+
+}
+
+.web2
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 12px;
+  height: 390px;
+  background-color: #555;
+}
+
+.h1-web
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 100%;
+ color: white;
+}
+.set1
+{
+  background-color: rgb(255, 255, 255);
+  height: 180px;
+  width: 180px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.set2
+{
+  background-color: black;
+  height: 180px;
+  width: 180px;
+  border-radius: 15px;
+}
+
+.set3
+{
+  background-color: black;
+  height: 180px;
+  width: 180px;
+  border-radius: 15px;
+}
+
+.set4
+{
+  background-color: black;
+  height: 180px;
+  width: 180px;
+  border-radius: 15px;
+}
+
+.set5
+{
+  background-color: black;
+  height: 180px;
+  width: 180px;
+  border-radius: 15px;
+}
+
+.set6
+{
+  background-color: rgb(255, 255, 255);
+  height: 180px;
+  width: 180px;
+  border-radius: 15px;
+}
+
+
+/*third section*/
+.third-section
+{
+    height: 300px;
+    background: linear-gradient(135deg, #87ceeb, #add8e6, #87ceeb);
+    background-size: 200% 200%;
+    animation: cloudyBlue 30s ease infinite;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-last-info
+{
+  height: 600px;
+  background-color: #555;
+}
+
+footer
+{
+
+  text-align: center;
+  background-color: rgb(140, 247, 255);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+@keyframes cloudyBlue {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* Base styles for the popup */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+}
+
+span
+{
+  color: red;
+}
+
+/* Show the popup on mobile devices */
+@media (max-width: 768px) {
+  .popup {
+      display: block;
+  }
+}
+
+
+
+/* Page max width and hieght*/
+@media (max-width: 425px) {
+  body 
+  {
+    font-size: 12px;
+  }
+  .intro-paragraph
+  {
+    font-size: 10px;
+    height: 315px;
+    background-color: black;
+  }
+  #pic
+  {
+    height: 106px;
+    width: 106px;
+  }
+
+  .secondhalf
+  {
+    
+    height: 100%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+
+}
+
+
+
