@@ -23,3 +23,32 @@ document.addEventListener("DOMContentLoaded", function() {
       showPopup();
   }
 });
+
+
+
+
+// Add event listeners for showing and hiding the tooltip
+document.getElementById('contactButton').addEventListener('mouseover', showTooltip);
+document.getElementById('contactButton').addEventListener('mouseout', hideTooltip);
+
+function showTooltip() {
+  const tooltip = document.getElementById('tooltip');
+  tooltip.style.visibility = 'visible';
+  tooltip.style.opacity = '1';
+}
+
+function hideTooltip() {
+  const tooltip = document.getElementById('tooltip');
+  tooltip.style.visibility = 'hidden';
+  tooltip.style.opacity = '0';
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const raindropContainer = document.querySelector('.raindrops');
+  for (let i = 0; i < 10; i++) {
+      const raindrop = document.createElement('div');
+      raindrop.classList.add('raindrop');
+      raindropContainer.appendChild(raindrop);
+  }
+});

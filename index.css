@@ -8,13 +8,17 @@ body
 /*My navbar*/
 
 nav {
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-   top: 0%;
-   opacity: 10;
+ 
 
+width: 100%;
+background-color: #333;
+
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1000;
+height: 53px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   }
   
   nav ul {
@@ -258,10 +262,211 @@ video
   justify-content: space-between;
   padding: 12px;
   height: 350px;
-
+  background-color: black;
 width: 100%;
 
 }
+
+/**/
+
+.card {
+  background: linear-gradient(270deg, #ff0080, #ff8c00, #40e0d0, #ff0080);
+  background-size: 800% 800%;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  max-width: 300px;
+  animation: gradientFlow 15s ease infinite;
+  filter: url(#glow);
+}
+
+
+
+.card-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  position: relative;
+}
+
+/**/
+.raindrops {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.raindrop {
+  position: absolute;
+  bottom: 100%;
+  width: 2px;
+  height: 20px;
+  background: rgba(10, 165, 255, 0.5);
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(100vh);
+  }
+}
+
+/* Randomize the raindrop animations */
+.raindrop:nth-child(1) {
+  left: 10%;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+.raindrop:nth-child(2) {
+  left: 20%;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+}
+.raindrop:nth-child(3) {
+  left: 30%;
+  animation-duration: 1.2s;
+  animation-delay: 1s;
+}
+.raindrop:nth-child(4) {
+  left: 40%;
+  animation-duration: 1.8s;
+  animation-delay: 1.5s;
+}
+.raindrop:nth-child(5) {
+  left: 50%;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+.raindrop:nth-child(6) {
+  left: 60%;
+  animation-duration: 1.6s;
+  animation-delay: 2.5s;
+}
+.raindrop:nth-child(7) {
+  left: 70%;
+  animation-duration: 1.3s;
+  animation-delay: 3s;
+}
+.raindrop:nth-child(8) {
+  left: 80%;
+  animation-duration: 1.9s;
+  animation-delay: 3.5s;
+}
+.raindrop:nth-child(9) {
+  left: 90%;
+  animation-duration: 1.4s;
+  animation-delay: 4s;
+}
+.raindrop:nth-child(10) {
+  left: 100%;
+  animation-duration: 1.1s;
+  animation-delay: 4.5s;
+}
+
+/**/
+
+.card-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/*
+.card-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+*/
+.tooltip {
+  visibility: hidden;
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%; /* Position above the button */
+  left: 50%;
+  margin-left: -100px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+/*
+.card-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+*/
+.card-content {
+  color: #ffffff;
+}
+
+.card-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.card-subtitle {
+  font-size: 18px;
+  color: #b0b0b0;
+  margin: 5px 0 10px;
+}
+
+.card-contact {
+  font-size: 16px;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+@keyframes gradientFlow {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@keyframes glow {
+  from {
+      filter: drop-shadow(0 0 10px rgba(0, 150, 255, 0.5));
+  }
+  to {
+      filter: drop-shadow(0 0 20px rgba(0, 150, 255, 1));
+  }
+}
+/**/
 
 .web2
 {
@@ -283,56 +488,7 @@ width: 100%;
   width: 100%;
  color: white;
 }
-.set1
-{
-  background-color: rgb(255, 255, 255);
-  height: 180px;
-  width: 180px;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.set2
-{
-  background-color: black;
-  height: 180px;
-  width: 180px;
-  border-radius: 15px;
-}
-
-.set3
-{
-  background-color: black;
-  height: 180px;
-  width: 180px;
-  border-radius: 15px;
-}
-
-.set4
-{
-  background-color: black;
-  height: 180px;
-  width: 180px;
-  border-radius: 15px;
-}
-
-.set5
-{
-  background-color: black;
-  height: 180px;
-  width: 180px;
-  border-radius: 15px;
-}
-
-.set6
-{
-  background-color: rgb(255, 255, 255);
-  height: 180px;
-  width: 180px;
-  border-radius: 15px;
-}
 
 
 /*third section*/
@@ -403,6 +559,67 @@ span
   .popup {
       display: block;
   }
+
+
+  .web
+  {
+    display: flex;
+    flex-direction: column;
+    height: 4000px;
+  }
+
+.second-section
+{
+  height: 1800px;
+}
+
+  /* Common styles for card container */
+.card-container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 70px; /* Adjust this value to ensure space from the navbar */
+  width: 100%;
+  
+}
+
+.card-title
+{
+  font-size: 5px;
+}
+
+.card-subtitle
+{
+  font-size: 5px;
+}
+
+.card-contact
+{
+  font-size: 1px;
+}
+
+/* Individual card styles */
+.card {
+  background: linear-gradient(270deg, #ff0080, #ff8c00, #40e0d0, #ff0080);
+  background-size: 800% 800%;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  max-width: calc(50% - 20px); /* For two cards per row on larger screens */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .card {
+      max-width: calc(100% - 20px); /* For one card per row on smaller screens */
+  }
+}
+
 }
 
 
