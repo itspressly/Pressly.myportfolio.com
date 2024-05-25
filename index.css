@@ -568,9 +568,12 @@ span
     height: 4000px;
   }
 
+
+
 .second-section
 {
-  height: 1800px;
+  height: 2000px;
+  
 }
 
   /* Common styles for card container */
@@ -587,28 +590,28 @@ span
 
 .card-title
 {
-  font-size: 5px;
+  font-size: 16px;
 }
 
 .card-subtitle
 {
-  font-size: 5px;
+  font-size: 13px;
 }
 
 .card-contact
 {
-  font-size: 1px;
+  font-size: 12px;
 }
 
 /* Individual card styles */
 .card {
   background: linear-gradient(270deg, #ff0080, #ff8c00, #40e0d0, #ff0080);
-  background-size: 800% 800%;
+  background-size: 1000px;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
   max-width: calc(50% - 20px); /* For two cards per row on larger screens */
 }
