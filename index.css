@@ -243,15 +243,11 @@ video
 
 .CONTENT
 {
- 
   height: 1810px;
   padding: 15px;
   display: flex;
   align-items: center;
   flex-direction: column;
-
- 
-  
 }
 
 .web
@@ -276,18 +272,20 @@ width: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  width: 190px;
   max-width: 300px;
   animation: gradientFlow 15s ease infinite;
   filter: url(#glow);
+  height: 210px;
 }
 
 
 
 .card-button {
   margin-top: 15px;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 10px 10px;
+  font-size: 12px;
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
   border: none;
@@ -419,23 +417,18 @@ width: 100%;
   visibility: visible;
   opacity: 1;
 }
-/*
-.card-button:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
-}
-*/
+
 .card-content {
   color: #ffffff;
 }
 
 .card-title {
-  font-size: 24px;
+  font-size: 17px;
   margin: 0;
 }
 
 .card-subtitle {
-  font-size: 18px;
+  font-size: 12px;
   color: #b0b0b0;
   margin: 5px 0 10px;
 }
@@ -566,14 +559,15 @@ span
     display: flex;
     flex-direction: column;
     height: 4000px;
+    
   }
 
 
 
 .second-section
 {
-  height: 2000px;
-  
+  height: 2160px;
+  background-color: #40e0d0;
 }
 
   /* Common styles for card container */
