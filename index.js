@@ -52,3 +52,32 @@ document.addEventListener('DOMContentLoaded', () => {
       raindropContainer.appendChild(raindrop);
   }
 });
+
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // Collect form data
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  // Construct the mailto link
+  const mailtoLink = `mailto:presslyzungunde96@gmail.com?subject=Contact%20Form%20Submission&body=Name:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0AMessage:%20${encodeURIComponent(message)}`;
+
+  // Open the mail client with the constructed link
+  window.location.href = mailtoLink;
+});
+
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // These IDs from the previous steps
+  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+      .then(function() {
+          alert('Message sent successfully!');
+      }, function(error) {
+          alert('Failed to send message. Error: ' + JSON.stringify(error));
+      });
+});

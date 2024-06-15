@@ -511,7 +511,137 @@ footer
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 670px;
+}
 
+.for-section-div
+{
+ 
+  width: 50%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+main {
+  
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+.form-group label {
+  display: block;
+  
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #555;
+}
+
+#map {
+  margin: 0px 0;
+  width: 50%;
+  height: 500px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+iframe
+{
+  border-radius: 20px;
+}
+
+
+
+.rocket {
+  position: absolute;
+  bottom: -100px;
+  right: 50px;
+  animation: fly 5s linear infinite;
+}
+
+.rocket img {
+  width: 100px;
+}
+
+@keyframes fly {
+  0% {
+      bottom: -100px;
+      transform: translateX(0);
+  }
+  50% {
+      bottom: 50%;
+      transform: translateX(-100px);
+  }
+  100% {
+      bottom: 100%;
+      transform: translateX(0);
+  }
+}
+
+
+
+/*Rainy animation for flutter*/
 
 @keyframes cloudyBlue {
   0% {
@@ -561,8 +691,6 @@ span
     height: 4000px;
     
   }
-
-
 
 .second-section
 {
@@ -618,6 +746,8 @@ span
 }
 
 }
+
+
 
 
 
